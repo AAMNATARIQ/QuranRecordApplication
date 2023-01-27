@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_launcher_background"
+    android:background="@color/white"
     tools:context=".Activity1">
 
     <TextView
@@ -37,22 +37,25 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
-            />
-
+            >
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
             android:layout_gravity="center_vertical|center_horizontal">
-            
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/image1"/>
-
-            
+                android:src="@drawable/home"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOME"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
         </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 
 </RelativeLayout>
