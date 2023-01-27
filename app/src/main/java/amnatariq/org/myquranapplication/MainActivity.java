@@ -1,7 +1,10 @@
 package amnatariq.org.myquranapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -27,7 +30,14 @@ public class MainActivity extends AppCompatActivity {
         image = findViewById(R.id.imageView);
         image.setAnimation(topAnim);
 
-
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MainActivity.this,Activity1.class);
+                startActivity(intent);
+                finish();
+            }
+        },SPLASH_SCREEN);
 
     }
 }
