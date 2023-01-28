@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:background="#f7be59"
     tools:context=".Activity1">
 
     <LinearLayout
@@ -20,18 +22,20 @@
             android:layout_weight="2">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="60dp"
-                android:layout_marginEnd="130dp"
-                android:layout_marginRight="150dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
                 android:gravity="center"
-                android:text="here text is"
-                android:textSize="25dp"
-                android:layout_alignParentRight="true">
-            </TextView>
+                android:text="Welcome"
+                android:textColor="#6b4605"
+                android:textSize="60dp"
+                android:textStyle="bold"
+                tools:ignore="MissingClass"></TextView>
 
         </RelativeLayout>
 
@@ -67,7 +71,7 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="90dp"
+                        android:layout_height="110dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/home">
                     </ImageView>
