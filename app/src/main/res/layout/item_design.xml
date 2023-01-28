@@ -13,7 +13,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:id="@+id/imageview"
-            app:cardCornerRdaius="60dp"
+            app:cardCornerRadius="60dp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp">
             <ImageView
@@ -53,6 +53,17 @@
             android:id="@+id/textview3"
             android:layout_toRightOf="@+id/imageview"
             android:layout_below="@+id/textview"
+            android:layout_marginLeft="20dp">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="----------------------------------------------"
+            android:textColor="#CDC7C7"
+            android:id="@+id/textview4"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@+id/imageview"
+            android:layout_below="@+id/imageview"
             android:layout_marginLeft="20dp">
         </TextView>
 
