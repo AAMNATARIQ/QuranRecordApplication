@@ -20,8 +20,8 @@ public class Activity1 extends AppCompatActivity implements View.OnClickListener
         //initializing
         D1 = (CardView) findViewById(R.id.d1);
         D2 = (CardView) findViewById(R.id.d2);
-        D2 = (CardView) findViewById(R.id.d3);
-        D3 = (CardView) findViewById(R.id.d4);
+        D3 = (CardView) findViewById(R.id.d3);
+        D4 = (CardView) findViewById(R.id.d4);
 
         //setting up onclick listener
         D1.setOnClickListener((View.OnClickListener) this);
