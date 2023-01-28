@@ -3,6 +3,7 @@ package amnatariq.org.myquranapplication;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -28,5 +29,14 @@ public class Activity1 extends AppCompatActivity {
         D3.setOnClickListener((View.OnClickListener) this);
         D4.setOnClickListener((View.OnClickListener) this);
 
+    }
+
+    @Override
+    public void onClick(View v)
+    {
+        Intent i;
+        switch (v.getId()){
+            case R.id.d1 : i = new Intent(this,d1.class); startActivity(i);break;
+        }
     }
 }
