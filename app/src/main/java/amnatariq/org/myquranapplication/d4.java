@@ -28,12 +28,14 @@ public class d4 extends AppCompatActivity {
 
     private void initData() {
         userList = new ArrayList<>();
-        userList.add(new ModalClass(R.drawable.pic1,"userone","done","this is user one information","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic2,"userone","done","this is user one information","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic3,"userone","done","this is user one information","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic4,"userone","done","this is user one information","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic5,"userone","done","this is user one information","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic1,"userone","done","this is user one information","_______________________________________"));
+        userList.add(new ModalClass(R.drawable.pic1,"userone","this is user one information","done","_______________________________________"));
+        userList.add(new ModalClass(R.drawable.pic2,"userone","this is user one information","done","_______________________________________"));
+        userList.add(new ModalClass(R.drawable.pic3,"userone","this is user one information","done","_______________________________________"));
+        userList.add(new ModalClass(R.drawable.pic4,"userone","this is user one information","done","_______________________________________"));
+        userList.add(new ModalClass(R.drawable.pic5,"userone","this is user one information","done","_______________________________________"));
+        userList.add(new ModalClass(R.drawable.pic1,"userone","this is user one information","done","_______________________________________"));
+        userList.add(new ModalClass(R.drawable.pic1,"userone","this is user one information","done","_______________________________________"));
+        userList.add(new ModalClass(R.drawable.pic1,"userone","this is user one information","done","_______________________________________"));
 
     }
 
