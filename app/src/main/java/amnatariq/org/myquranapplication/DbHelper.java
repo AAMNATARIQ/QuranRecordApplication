@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 public class DbHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
-
+        //String createTableStatement = "CREATE TABLE USERSTUDENT_TABLE( StudentId Integer PRIMARY KEY AUTOINCREMENT,"
     }
 
     @Override
