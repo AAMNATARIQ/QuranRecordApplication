@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    layout_width="m"
+    layout_height=""
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UserInformation"
@@ -98,12 +102,13 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:background="@color/white">
+            android:background="@color/white"
+            android:paddingBottom="10dp">
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:id="@+id/cardsabak"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:background="@color/teal_700"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp">
@@ -129,7 +134,35 @@
                     android:text="sabak number"
                     android:textSize="12sp"></TextView>
             </androidx.cardview.widget.CardView>
+
         </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="65dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Correct">
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp">
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Incorrect"></Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -167,6 +200,35 @@
             </androidx.cardview.widget.CardView>
         </RelativeLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="65dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Correct">
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp">
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Incorrect"></Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="90dp"
@@ -202,6 +264,34 @@
                     android:textSize="12sp"></TextView>
             </androidx.cardview.widget.CardView>
         </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="65dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Correct">
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp">
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Incorrect"></Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
 
 
     </LinearLayout>
