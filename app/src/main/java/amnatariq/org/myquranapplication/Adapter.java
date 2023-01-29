@@ -1,5 +1,6 @@
 package amnatariq.org.myquranapplication;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,17 +14,20 @@ import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
+    private final RecyclerViewInterface rvi;
+
     private List<ModalClass> userList;
 
-    public Adapter(List<ModalClass> userList){
+    public Adapter(List<ModalClass> userList, RecyclerViewInterface recyclerViewInterface){
         this.userList = userList;
+        this.rvi = recyclerViewInterface;
     }
 
     @NonNull
     @Override
     public Adapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_design,parent,false);
-        return new ViewHolder(view);
+        return new ViewHolder(view,rvi);
     }
 
     @Override
@@ -43,7 +47,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         return userList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder
+    {
 
         private ImageView imageView;
         private TextView textView1;
@@ -52,7 +57,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         private TextView divider;
 
 
-        public ViewHolder(@NonNull View itemView)
+        public ViewHolder(@NonNull View itemView,RecyclerViewInterface recyclerViewInterface)
         {
             super(itemView);
             imageView=itemView.findViewById(R.id.imageview1);
@@ -60,6 +65,21 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             textView2 = itemView.findViewById((R.id.textview2));
             textView3 = itemView.findViewById((R.id.textview3));
             divider = itemView.findViewById((R.id.divider));
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(recyclerViewInterface!=null)
+                    {
+                        int pos = getAbsoluteAdapterPosition();
+                        if(pos!=RecyclerView.NO_POSITION)
+                        {
+                            recyclerViewInterface.onItemClick(pos);
+                        }
+                    }
+                }
+            });
+
         }
 
         public void setData(int resource, String name, String msg, String status, String line) {

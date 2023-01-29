@@ -6,7 +6,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="95dp"
+        android:layout_height="120dp"
         android:background="@color/white">
 
         <androidx.cardview.widget.CardView
@@ -40,25 +40,29 @@
         <TextView
             android:id="@+id/textview2"
             android:layout_width="80dp"
-            android:layout_height="30dp"
+            android:layout_height="35dp"
             android:layout_marginLeft="75dp"
             android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/textview"
+            android:gravity="center"
             android:text="10:43"
+
+            android:textStyle="bold"
+
             android:textColor="@color/black"
             android:textSize="12sp"></TextView>
 
         <TextView
             android:id="@+id/textview3"
-            android:layout_width="273dp"
-            android:layout_height="24dp"
+            android:layout_width="276dp"
+            android:layout_height="30dp"
             android:layout_below="@+id/textview"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="6dp"
             android:layout_toRightOf="@+id/imageview"
             android:text="This is the information of student one"
             android:textColor="@color/black"
             android:textSize="15sp"></TextView>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="20dp"
