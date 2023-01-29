@@ -36,7 +36,7 @@ public class Activity1 extends AppCompatActivity implements View.OnClickListener
     {
         Intent i;
         switch (v.getId()){
-            case R.id.d1 : i = new Intent(this,d1.class); startActivity(i);break;
+            case R.id.d1 : i = new Intent(this,MainActivity.class); startActivity(i);break;
             case R.id.d2 : i = new Intent(this,d2.class); startActivity(i);break;
             case R.id.d3 : i = new Intent(this,d3.class); startActivity(i);break;
             case R.id.d4 : i = new Intent(this,d4.class); startActivity(i);break;
