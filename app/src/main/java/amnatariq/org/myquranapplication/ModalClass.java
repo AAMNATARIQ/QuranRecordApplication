@@ -7,6 +7,15 @@ public class ModalClass {
     private String textview3;
     private String divider;
 
+    ModalClass(int imageview1,String textview1,String textview2,String textview3,String divider)
+    {
+        this.imageview1=imageview1;
+        this.textview1=textview1;
+        this.textview2=textview2;
+        this.textview3=textview3;
+        this.divider = divider;
+    }
+
     public int getImageview1() {
         return imageview1;
     }
