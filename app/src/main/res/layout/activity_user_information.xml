@@ -112,7 +112,8 @@
                     android:layout_marginTop="10dp"
                     android:background="@color/teal_700"
                     android:layout_marginRight="20dp"
-                    android:layout_marginLeft="20dp">
+                    android:layout_marginLeft="20dp"
+                    >
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="30dp"
@@ -138,11 +139,13 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="240dp"
-                        android:paddingTop="17dp">
+                        android:paddingLeft="250dp"
+                        android:paddingTop="17dp"
+                        android:orientation="horizontal">
                         <Button
                             android:layout_width="80dp"
                             android:layout_height="35dp"
+                            android:id="@+id/btnviewone"
                             android:background="@color/teal_700"
                             android:text="View"
                             android:textColor="@color/white"
@@ -161,9 +164,11 @@
                 >
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
                     <Button
                         android:layout_width="125dp"
+                        android:id="@+id/correctone"
                         android:layout_height="wrap_content"
                         android:text="Correct">
                     </Button>
@@ -171,7 +176,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="30dp">
+                    android:paddingLeft="30dp"
+                    android:orientation="horizontal">
                     <Button
                         android:layout_width="130dp"
                         android:layout_height="wrap_content"
@@ -217,11 +223,12 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="240dp"
+                        android:paddingLeft="250dp"
                         android:paddingTop="17dp">
                         <Button
                             android:layout_width="80dp"
                             android:layout_height="35dp"
+                            android:id="@+id/btnviewtwo"
                             android:background="@color/teal_700"
                             android:text="View"
                             android:textColor="@color/white"
@@ -296,11 +303,12 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="240dp"
+                        android:paddingLeft="250dp"
                         android:paddingTop="17dp">
                         <Button
                             android:layout_width="80dp"
                             android:layout_height="35dp"
+                            android:id="@+id/btnviewthree"
                             android:background="@color/teal_700"
                             android:text="View"
                             android:textColor="@color/white"
@@ -323,6 +331,7 @@
                     <Button
                         android:layout_width="125dp"
                         android:layout_height="wrap_content"
+                        android:id="@+id/btncorrect"
                         android:text="Correct">
                     </Button>
                 </LinearLayout>
