@@ -126,7 +126,7 @@
                     </TextView>
                     <TextView
                         android:id="@+id/textsabakvalue"
-                        android:layout_width="80dp"
+                        android:layout_width="60dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="160dp"
                         android:layout_marginTop="20dp"
@@ -134,6 +134,22 @@
                         android:gravity="center"
                         android:text="sabak number"
                         android:textSize="12sp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="240dp"
+                        android:paddingTop="17dp">
+                        <Button
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:background="@color/teal_700"
+                            android:text="View"
+                            android:textColor="@color/white"
+                            >
+                        </Button>
+                    </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
             </RelativeLayout>
@@ -198,6 +214,20 @@
                         android:gravity="center"
                         android:text="sabaki number"
                         android:textSize="12sp"></TextView>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="240dp"
+                        android:paddingTop="17dp">
+                        <Button
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:background="@color/teal_700"
+                            android:text="View"
+                            android:textColor="@color/white"
+                            >
+                        </Button>
+                    </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </RelativeLayout>
 
@@ -263,6 +293,20 @@
                         android:gravity="center"
                         android:text="manzil number"
                         android:textSize="12sp"></TextView>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="240dp"
+                        android:paddingTop="17dp">
+                        <Button
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:background="@color/teal_700"
+                            android:text="View"
+                            android:textColor="@color/white"
+                            >
+                        </Button>
+                    </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </RelativeLayout>
 
