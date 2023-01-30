@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,12 +37,14 @@
                 android:id="@+id/sabakone"
                 android:text="Sabak: 1 : "
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textSize="15dp"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sabakonevalue"
-                android:paddingLeft="30dp"
+                android:textColor="@color/black"
+                android:paddingLeft="38dp"
                 android:text="number"
                 android:textSize="15dp"></TextView>
         </LinearLayout>
@@ -55,14 +58,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sabaktwo"
-                android:text="Sabak: 1 : "
+                android:textColor="@color/black"
+                android:text="Sabak: 2 : "
                 android:textStyle="bold"
                 android:textSize="15dp"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sabaktwovalue"
-                android:paddingLeft="30dp"
+                android:textColor="@color/black"
+                android:paddingLeft="38dp"
                 android:text="number"
                 android:textSize="15dp"></TextView>
         </LinearLayout>
@@ -76,14 +81,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sabakthree"
-                android:text="Sabak: 1 : "
+                android:textColor="@color/black"
+                android:text="Sabak: 3 : "
                 android:textStyle="bold"
                 android:textSize="15dp"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sabakthreevalue"
-                android:paddingLeft="30dp"
+                android:paddingLeft="38dp"
+                android:textColor="@color/black"
                 android:text="number"
                 android:textSize="15dp"></TextView>
         </LinearLayout>
@@ -97,14 +104,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sabak4"
-                android:text="Sabak: 1 : "
+                android:textColor="@color/black"
+                android:text="Sabak: 4 : "
                 android:textStyle="bold"
                 android:textSize="15dp"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sabak4value"
-                android:paddingLeft="30dp"
+                android:textColor="@color/black"
+                android:paddingLeft="38dp"
                 android:text="number"
                 android:textSize="15dp"></TextView>
         </LinearLayout>
@@ -118,14 +127,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sabak5"
-                android:text="Sabak: 1 : "
+                android:textColor="@color/black"
+                android:text="Sabak: 5 : "
                 android:textStyle="bold"
                 android:textSize="15dp"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sabak5value"
-                android:paddingLeft="30dp"
+                android:textColor="@color/black"
+                android:paddingLeft="38dp"
                 android:text="number"
                 android:textSize="15dp"></TextView>
         </LinearLayout><LinearLayout
@@ -137,15 +148,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:id="@+id/sabak6"
-            android:text="Sabak: 1 : "
+            android:text="Sabak: 6 : "
             android:textStyle="bold"
             android:textSize="15dp"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/sabak6value"
-            android:paddingLeft="30dp"
+            android:textColor="@color/black"
+            android:paddingLeft="38dp"
             android:text="number"
             android:textSize="15dp"></TextView>
     </LinearLayout>
@@ -159,14 +172,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sabak7"
-                android:text="Sabak: 1 : "
+                android:textColor="@color/black"
+                android:text="Sabak: 7 : "
                 android:textStyle="bold"
                 android:textSize="15dp"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sabak7value"
-                android:paddingLeft="30dp"
+                android:textColor="@color/black"
+                android:paddingLeft="38dp"
                 android:text="number"
                 android:textSize="15dp"></TextView>
         </LinearLayout>
@@ -180,13 +195,84 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sabak8"
-                android:text="Sabak: 1 : "
+                android:textColor="@color/black"
+                android:text="Sabak: 8 : "
                 android:textStyle="bold"
                 android:textSize="15dp"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sabak8value"
+                android:textColor="@color/black"
+                android:paddingLeft="38dp"
+                android:text="number"
+                android:textSize="15dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sabak9"
+                android:textColor="@color/black"
+                android:text="Sabak: 9 : "
+                android:textStyle="bold"
+                android:textSize="15dp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sabak9value"
+                android:textColor="@color/black"
+                android:paddingLeft="38dp"
+                android:text="number"
+                android:textSize="15dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sabak10"
+                android:text="Sabak: 10 : "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sabak10value"
+                android:paddingLeft="30dp"
+                android:textColor="@color/black"
+                android:text="number"
+                android:textSize="15dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sabak11"
+                android:textColor="@color/black"
+                android:text="Sabak: 11 : "
+                android:textStyle="bold"
+                android:textSize="15dp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sabak11value"
+                android:textColor="@color/black"
                 android:paddingLeft="30dp"
                 android:text="number"
                 android:textSize="15dp"></TextView>
@@ -200,14 +286,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sabak8"
-                android:text="Sabak: 1 : "
+                android:id="@+id/sabak12"
+                android:text="Sabak: 12 : "
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="15dp"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sabakonevalue"
+                android:id="@+id/sabak12value"
+                android:textColor="@color/black"
                 android:paddingLeft="30dp"
                 android:text="number"
                 android:textSize="15dp"></TextView>
@@ -221,78 +309,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sabakone"
-                android:text="Sabak: 1 : "
+                android:id="@+id/sabak13"
+                android:text="Sabak: 13 : "
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="15dp"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sabakonevalue"
+                android:id="@+id/sabak13value"
                 android:paddingLeft="30dp"
-                android:text="number"
-                android:textSize="15dp"></TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sabakone"
-                android:text="Sabak: 1 : "
-                android:textStyle="bold"
-                android:textSize="15dp"></TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sabakonevalue"
-                android:paddingLeft="30dp"
-                android:text="number"
-                android:textSize="15dp"></TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sabakone"
-                android:text="Sabak: 1 : "
-                android:textStyle="bold"
-                android:textSize="15dp"></TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sabakonevalue"
-                android:paddingLeft="30dp"
-                android:text="number"
-                android:textSize="15dp"></TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sabakone"
-                android:text="Sabak: 1 : "
-                android:textStyle="bold"
-                android:textSize="15dp"></TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sabakonevalue"
-                android:paddingLeft="30dp"
+                android:textColor="@color/black"
                 android:text="number"
                 android:textSize="15dp"></TextView>
         </LinearLayout><LinearLayout
@@ -304,14 +331,38 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sabakone"
-            android:text="Sabak: 1 : "
+            android:id="@+id/sabak14"
+            android:text="Sabak: 14 : "
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="15dp"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sabakonevalue"
+            android:id="@+id/sabak14value"
+            android:paddingLeft="30dp"
+            android:text="number"
+            android:textColor="@color/black"
+            android:textSize="15dp"></TextView>
+    </LinearLayout><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sabak15"
+            android:textColor="@color/black"
+            android:text="Sabak: 15 : "
+            android:textStyle="bold"
+            android:textSize="15dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sabak15value"
+            android:textColor="@color/black"
             android:paddingLeft="30dp"
             android:text="number"
             android:textSize="15dp"></TextView>
@@ -324,14 +375,152 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sabakone"
-            android:text="Sabak: 1 : "
+            android:id="@+id/sabak16"
+            android:textColor="@color/black"
+            android:text="Sabak: 16 : "
             android:textStyle="bold"
             android:textSize="15dp"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sabakonevalue"
+            android:id="@+id/sabak16value"
+            android:paddingLeft="30dp"
+            android:textColor="@color/black"
+            android:text="number"
+            android:textSize="15dp"></TextView>
+    </LinearLayout><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sabak17"
+            android:text="Sabak: 17 : "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sabak17value"
+            android:paddingLeft="30dp"
+            android:textColor="@color/black"
+            android:text="number"
+            android:textSize="15dp"></TextView>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sabak18"
+                android:textColor="@color/black"
+                android:text="Sabak: 18 : "
+                android:textStyle="bold"
+                android:textSize="15dp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sabak18value"
+                android:paddingLeft="30dp"
+                android:textColor="@color/black"
+                android:text="number"
+                android:textSize="15dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sabak19"
+                android:textColor="@color/black"
+                android:text="Sabak: 19 : "
+                android:textStyle="bold"
+                android:textSize="15dp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sabak19value"
+                android:paddingLeft="30dp"
+                android:textColor="@color/black"
+                android:text="number"
+                android:textSize="15dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sabak20"
+                android:text="Sabak: 20 : "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sabak20value"
+                android:paddingLeft="30dp"
+                android:textColor="@color/black"
+                android:text="number"
+                android:textSize="15dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sabak21"
+                android:text="Sabak: 21 : "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sabak21value"
+                android:paddingLeft="30dp"
+                android:textColor="@color/black"
+                android:text="number"
+                android:textSize="15dp"></TextView>
+        </LinearLayout><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sabak22"
+            android:textColor="@color/black"
+            android:text="Sabak: 22 : "
+            android:textStyle="bold"
+            android:textSize="15dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sabak22value"
+            android:textColor="@color/black"
             android:paddingLeft="30dp"
             android:text="number"
             android:textSize="15dp"></TextView>
@@ -344,14 +533,104 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sabakone"
-            android:text="Sabak: 1 : "
+            android:id="@+id/sabak23"
+            android:text="Sabak: 23 : "
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="15dp"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sabakonevalue"
+            android:id="@+id/sabak23value"
+            android:paddingLeft="30dp"
+            android:textColor="@color/black"
+            android:text="number"
+            android:textSize="15dp"></TextView>
+    </LinearLayout><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sabak24"
+            android:text="Sabak: 24 : "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sabak24value"
+            android:paddingLeft="30dp"
+            android:textColor="@color/black"
+            android:text="number"
+            android:textSize="15dp"></TextView>
+    </LinearLayout><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sabak25"
+            android:textColor="@color/black"
+            android:text="Sabak: 25 : "
+            android:textStyle="bold"
+            android:textSize="15dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sabak25value"
+            android:paddingLeft="30dp"
+            android:text="number"
+            android:textColor="@color/black"
+            android:textSize="15dp"></TextView>
+    </LinearLayout><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sabak26"
+            android:text="Sabak: 26 : "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sabak26value"
+            android:paddingLeft="30dp"
+            android:textColor="@color/black"
+            android:text="number"
+            android:textSize="15dp"></TextView>
+    </LinearLayout><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sabak27"
+            android:text="Sabak: 27 : "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sabak27value"
+            android:textColor="@color/black"
             android:paddingLeft="30dp"
             android:text="number"
             android:textSize="15dp"></TextView>
@@ -364,14 +643,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sabakone"
-            android:text="Sabak: 1 : "
+            android:id="@+id/sabak28"
+            android:text="Sabak: 28 : "
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="15dp"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sabakonevalue"
+            android:id="@+id/sabak28value"
+            android:textColor="@color/black"
             android:paddingLeft="30dp"
             android:text="number"
             android:textSize="15dp"></TextView>
@@ -385,78 +666,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sabakone"
-                android:text="Sabak: 1 : "
+                android:id="@+id/sabak29"
+                android:text="Sabak: 29 : "
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="15dp"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sabakonevalue"
+                android:id="@+id/sabak29value"
                 android:paddingLeft="30dp"
-                android:text="number"
-                android:textSize="15dp"></TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sabakone"
-                android:text="Sabak: 1 : "
-                android:textStyle="bold"
-                android:textSize="15dp"></TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sabakonevalue"
-                android:paddingLeft="30dp"
-                android:text="number"
-                android:textSize="15dp"></TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sabakone"
-                android:text="Sabak: 1 : "
-                android:textStyle="bold"
-                android:textSize="15dp"></TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sabakonevalue"
-                android:paddingLeft="30dp"
-                android:text="number"
-                android:textSize="15dp"></TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sabakone"
-                android:text="Sabak: 1 : "
-                android:textStyle="bold"
-                android:textSize="15dp"></TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sabakonevalue"
-                android:paddingLeft="30dp"
+                android:textColor="@color/black"
                 android:text="number"
                 android:textSize="15dp"></TextView>
         </LinearLayout><LinearLayout
@@ -468,175 +688,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sabakone"
-            android:text="Sabak: 1 : "
+            android:id="@+id/sabak30"
+            android:textColor="@color/black"
+            android:text="Sabak: 30 : "
             android:textStyle="bold"
             android:textSize="15dp"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sabakonevalue"
-            android:paddingLeft="30dp"
-            android:text="number"
-            android:textSize="15dp"></TextView>
-    </LinearLayout><LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sabakone"
-            android:text="Sabak: 1 : "
-            android:textStyle="bold"
-            android:textSize="15dp"></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sabakonevalue"
-            android:paddingLeft="30dp"
-            android:text="number"
-            android:textSize="15dp"></TextView>
-    </LinearLayout><LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sabakone"
-            android:text="Sabak: 1 : "
-            android:textStyle="bold"
-            android:textSize="15dp"></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sabakonevalue"
-            android:paddingLeft="30dp"
-            android:text="number"
-            android:textSize="15dp"></TextView>
-    </LinearLayout><LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sabakone"
-            android:text="Sabak: 1 : "
-            android:textStyle="bold"
-            android:textSize="15dp"></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sabakonevalue"
-            android:paddingLeft="30dp"
-            android:text="number"
-            android:textSize="15dp"></TextView>
-    </LinearLayout><LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sabakone"
-            android:text="Sabak: 1 : "
-            android:textStyle="bold"
-            android:textSize="15dp"></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sabakonevalue"
-            android:paddingLeft="30dp"
-            android:text="number"
-            android:textSize="15dp"></TextView>
-    </LinearLayout><LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sabakone"
-            android:text="Sabak: 1 : "
-            android:textStyle="bold"
-            android:textSize="15dp"></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sabakonevalue"
-            android:paddingLeft="30dp"
-            android:text="number"
-            android:textSize="15dp"></TextView>
-    </LinearLayout><LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sabakone"
-            android:text="Sabak: 1 : "
-            android:textStyle="bold"
-            android:textSize="15dp"></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sabakonevalue"
-            android:paddingLeft="30dp"
-            android:text="number"
-            android:textSize="15dp"></TextView>
-    </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sabakone"
-                android:text="Sabak: 1 : "
-                android:textStyle="bold"
-                android:textSize="15dp"></TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sabakonevalue"
-                android:paddingLeft="30dp"
-                android:text="number"
-                android:textSize="15dp"></TextView>
-        </LinearLayout><LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sabakone"
-            android:text="Sabak: 1 : "
-            android:textStyle="bold"
-            android:textSize="15dp"></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sabakonevalue"
+            android:id="@+id/sabak30value"
+            android:textColor="@color/black"
             android:paddingLeft="30dp"
             android:text="number"
             android:textSize="15dp"></TextView>
