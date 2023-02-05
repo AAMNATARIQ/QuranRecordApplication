@@ -11,10 +11,10 @@ public class Sabak extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sabak);
 
-        String username = getIntent().getStringExtra("studentName");
-
-        DbHelper db = new DbHelper(this);
-        db.getStudent(username);
+//        String username = getIntent().getStringExtra("studentName");
+//
+//        DbHelper db = new DbHelper(this);
+//        db.getStudent(username);
 
     }
 }

@@ -133,9 +133,16 @@ public class UserInformation extends AppCompatActivity{
     {
         DbHelper db=new DbHelper(this);
         ModalClass lm = db.getStudent(username);
+
+        tvsabaknum.setText(String.valueOf(lm.getSabak()));
+        if(lm.getIncorrectSabak()==""||lm.getIncorrectSabak().length()==0)
+            lm.setIncorrectSabak(String.valueOf(lm.getSabak()));
+        else
+            lm.setIncorrectSabak(lm.getIncorrectSabak()+","+lm.getSabak());
+
         //int c=Integer.parseInt(lm.getIncorrectSabak());
-        String str = String.valueOf(lm.getSabak());
-        lm.setIncorrectSabak(lm.getIncorrectSabak()+str);
+//        String str = String.valueOf(lm.getSabak());
+//        lm.setIncorrectSabak(lm.getIncorrectSabak()+str);
         db.updateStudent(lm);
     }
     public void updateSabkiCorrectCount(String username)
@@ -150,10 +157,16 @@ public class UserInformation extends AppCompatActivity{
     {
         DbHelper db=new DbHelper(this);
         ModalClass lm = db.getStudent(username);
+        tvsabkinum.setText(String.valueOf(lm.getSabki()));
+        if(lm.getIncorrectSabki()==""||lm.getIncorrectSabki().length()==0)
+            lm.setIncorrectSabki(String.valueOf(lm.getSabki()));
+        else
+            lm.setIncorrectSabki(lm.getIncorrectSabki()+","+lm.getSabki());
+
 //        int c=Integer.parseInt(lm.getIncorrectSabki());
 //        lm.setIncorrectSabki(String.valueOf(c+1));
-        String str = String.valueOf(lm.getSabak());
-        lm.setIncorrectSabak(lm.getIncorrectSabak()+str);
+//        String str = String.valueOf(lm.getSabak());
+//        lm.setIncorrectSabak(lm.getIncorrectSabak()+str);
         db.updateStudent(lm);
     }
     public void updateManzilCorrectCount(String username)
@@ -168,10 +181,16 @@ public class UserInformation extends AppCompatActivity{
     {
         DbHelper db=new DbHelper(this);
         ModalClass lm = db.getStudent(username);
+        tvmanzilnum.setText(String.valueOf(lm.getManzil()));
+        if(lm.getIncorrectMazil()==""||lm.getIncorrectMazil().length()==0)
+            lm.setIncorrectMazil(String.valueOf(lm.getManzil()));
+        else
+            lm.setIncorrectSabak(lm.getIncorrectSabak()+","+lm.getSabak());
+
 //        int c=Integer.parseInt(lm.getIncorrectMazil());
 //        lm.setIncorrectMazil(String.valueOf(c+1));
-        String str = String.valueOf(lm.getSabak());
-        lm.setIncorrectSabak(lm.getIncorrectSabak()+str);
+//        String str = String.valueOf(lm.getSabak());
+//        lm.setIncorrectSabak(lm.getIncorrectSabak()+str);
         db.updateStudent(lm);
     }
 }
