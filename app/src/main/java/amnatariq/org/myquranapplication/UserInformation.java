@@ -6,8 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class UserInformation extends AppCompatActivity{
+
+    TextView tvname, tvbio;
 
     Button btnv1,btnv2,btnv3;
 
@@ -17,6 +20,9 @@ public class UserInformation extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_information);
+
+        tvname = findViewById(R.id.usernametext);
+        tvbio= findViewById(R.id.userbio);
 
         btnv1 = (Button)findViewById(R.id.btnviewone);
         btnv2 = (Button)findViewById(R.id.btnviewtwo);
@@ -51,6 +57,38 @@ public class UserInformation extends AppCompatActivity{
             }
         });
 
+
+        btnc1.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view){updateSabakCorrectCount();}
+        });
+        btninc1.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view){updateSabakIncorrectCount();}
+        });
+        btnc2.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view){updateSabkiCorrectCount();}
+        });
+        btninc2.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view){updateSabkiIncorrectCount();}
+        });
+        btnc3.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view){updateManzilCorrectCount();}
+        });
+        btninc3.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view){updateManzilIncorrectCount();}
+        });
+
     }
     public void updateSabakView()
     {
@@ -66,5 +104,30 @@ public class UserInformation extends AppCompatActivity{
     {
         Intent intent = new Intent(this,Manzil.class);
         startActivity(intent);
+    }
+
+    public void updateSabakCorrectCount()
+    {
+
+    }
+    public void updateSabakIncorrectCount()
+    {
+
+    }
+    public void updateSabkiCorrectCount()
+    {
+
+    }
+    public void updateSabkiIncorrectCount()
+    {
+
+    }
+    public void updateManzilCorrectCount()
+    {
+
+    }
+    public void updateManzilIncorrectCount()
+    {
+
     }
 }

@@ -85,6 +85,8 @@ public class d4 extends AppCompatActivity implements RecyclerViewInterface{
     @Override
     public void onItemClick(int position) {
         Intent intent=new Intent(this,UserInformation.class);
+        intent.putExtra("studentName",userList.get(position).getStudentName());
+        intent.putExtra("studentBio",userList.get(position).getStudentDept());
         startActivity(intent);
     }
 }
