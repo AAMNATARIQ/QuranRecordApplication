@@ -1,6 +1,5 @@
 package amnatariq.org.myquranapplication;
 
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,13 +32,14 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull Adapter.ViewHolder holder, int position) {
 
-        int resource = userList.get(position).getImageview1();
-        String name = userList.get(position).getTextview1();
-        String msg = userList.get(position).getTextview2();
-        String status = userList.get(position).getTextview3();
+        //int resource = userList.get(position).getImageview1();
+        String name = userList.get(position).getStudentName();
+        String msg = userList.get(position).getStudentDept();
+        String status = userList.get(position).getIncorrectSabak();
         String line = userList.get(position).getDivider();
 
-        holder.setData(resource,name,msg,status,line);
+        holder.setData(name,msg,status,line);
+        //holder.setData(resource,name,msg,status,line);
     }
 
     @Override
@@ -82,8 +82,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
         }
 
-        public void setData(int resource, String name, String msg, String status, String line) {
-           imageView.setImageResource(resource);
+        public void setData(String name, String msg, String status, String line) {
+           //imageView.setImageResource(resource);
             textView1.setText(name);
             textView3.setText(msg);
             textView2.setText(status);

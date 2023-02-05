@@ -41,19 +41,32 @@ public class d4 extends AppCompatActivity implements RecyclerViewInterface{
     }
 
     private void initData() {
+
+        ModalClass learningModel;
+        System.out.println("Model = ?");
+
+        DbHelper dbHelper = new DbHelper(d4.this);
+        dbHelper.addStudent(new ModalClass("userone",R.drawable.pic1,"this is user one information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        dbHelper.addStudent(new ModalClass("usertwo",R.drawable.pic2,"this is user two information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        dbHelper.addStudent(new ModalClass("userthree",R.drawable.pic3,"this is user three information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        dbHelper.addStudent(new ModalClass("userfour",R.drawable.pic4,"this is user four information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        dbHelper.addStudent(new ModalClass("userfive",R.drawable.pic5,"this is user five information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        dbHelper.addStudent(new ModalClass("usersix",R.drawable.pic1,"this is user six information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        dbHelper.addStudent(new ModalClass("userseven",R.drawable.pic2,"this is user seven information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        dbHelper.addStudent(new ModalClass("usereight",R.drawable.pic3,"this is user eight information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        dbHelper.addStudent(new ModalClass("usernine",R.drawable.pic4,"this is user nine information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+
+
         userList = new ArrayList<>();
-        userList.add(new ModalClass(R.drawable.pic1,"userone","this is user one information","done","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic2,"userone","this is user one information","done","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic3,"userone","this is user one information","done","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic4,"userone","this is user one information","done","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic5,"userone","this is user one information","done","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic1,"userone","this is user one information","done","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic1,"userone","this is user one information","done","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic1,"userone","this is user one information","done","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic1,"userone","this is user one information","done","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic1,"userone","this is user one information","done","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic1,"userone","this is user one information","done","_______________________________________"));
-        userList.add(new ModalClass(R.drawable.pic1,"userone","this is user one information","done","_______________________________________"));
+        userList.add(new ModalClass("userone",R.drawable.pic1,"this is user one information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        userList.add(new ModalClass("usertwo",R.drawable.pic2,"this is user two information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        userList.add(new ModalClass("userthree",R.drawable.pic3,"this is user three information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        userList.add(new ModalClass("userfour",R.drawable.pic4,"this is user four information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        userList.add(new ModalClass("userfive",R.drawable.pic5,"this is user five information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        userList.add(new ModalClass("usersix",R.drawable.pic1,"this is user six information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        userList.add(new ModalClass("userseven",R.drawable.pic2,"this is user seven information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        userList.add(new ModalClass("usereight",R.drawable.pic3,"this is user eight information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
+        userList.add(new ModalClass("usernine",R.drawable.pic4,"this is user nine information",0,false,0,false,0,false,"0","0","0","_______________________________________"));
 
     }
 

@@ -21,7 +21,7 @@
             android:textStyle="bold"
             android:textSize="25dp"
             android:textColor="@color/black"
-            android:text="Sabak Information"
+            android:text="Sabaki Information"
             android:gravity="center">
         </TextView>
 
@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sabakone"
-                android:text="Sabak: 1 : "
+                android:text="Sabaki: 1 : "
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="15dp"></TextView>
@@ -57,7 +57,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sabaktwo"
+                android:id="@+id/sabakitwo"
                 android:textColor="@color/black"
                 android:text="Sabak: 2 : "
                 android:textStyle="bold"
@@ -80,7 +80,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sabakthree"
+                android:id="@+id/sabakithree"
                 android:textColor="@color/black"
                 android:text="Sabak: 3 : "
                 android:textStyle="bold"
@@ -103,7 +103,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sabak4"
+                android:id="@+id/sabaki4"
                 android:textColor="@color/black"
                 android:text="Sabak: 4 : "
                 android:textStyle="bold"
@@ -126,7 +126,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sabak5"
+                android:id="@+id/sabaki5"
                 android:textColor="@color/black"
                 android:text="Sabak: 5 : "
                 android:textStyle="bold"
@@ -149,7 +149,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:id="@+id/sabak6"
+            android:id="@+id/sabaki6"
             android:text="Sabak: 6 : "
             android:textStyle="bold"
             android:textSize="15dp"></TextView>
@@ -171,7 +171,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sabak7"
+                android:id="@+id/sabaki7"
                 android:textColor="@color/black"
                 android:text="Sabak: 7 : "
                 android:textStyle="bold"
@@ -194,15 +194,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sabak8"
+                android:id="@+id/sabaki8"
                 android:textColor="@color/black"
-                android:text="Sabak: 8 : "
+                android:text="Sabaki: 8 : "
                 android:textStyle="bold"
                 android:textSize="15dp"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sabak8value"
+                android:id="@+id/sabaki8value"
                 android:textColor="@color/black"
                 android:paddingLeft="38dp"
                 android:text="number"
@@ -217,9 +217,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sabak9"
+                android:id="@+id/sabaki9"
                 android:textColor="@color/black"
-                android:text="Sabak: 9 : "
+                android:text="Sabaki: 9 : "
                 android:textStyle="bold"
                 android:textSize="15dp"></TextView>
             <TextView
