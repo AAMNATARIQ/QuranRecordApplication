@@ -38,6 +38,12 @@ public class UserInformation extends AppCompatActivity{
         btninc3 = (Button)findViewById(R.id.btnincorrectmanzil);
 
 
+        String username = getIntent().getStringExtra("studentName");
+        tvname.setText(username);
+        String userbio = getIntent().getStringExtra("studentBio");
+        tvname.setText(userbio);
+
+
         btnv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
