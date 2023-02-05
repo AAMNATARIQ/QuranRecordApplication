@@ -80,9 +80,6 @@ public class d4 extends AppCompatActivity implements RecyclerViewInterface{
         recyclerView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
 
-
-
-
     }
 
     @Override

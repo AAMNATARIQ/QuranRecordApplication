@@ -11,6 +11,8 @@ public class UserInformation extends AppCompatActivity{
 
     Button btnv1,btnv2,btnv3;
 
+    Button btnc1,btninc1,btnc2,btninc2,btnc3,btninc3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,16 @@ public class UserInformation extends AppCompatActivity{
         btnv1 = (Button)findViewById(R.id.btnviewone);
         btnv2 = (Button)findViewById(R.id.btnviewtwo);
         btnv3 = (Button)findViewById(R.id.btnviewthree);
+
+        btnc1 = (Button)findViewById(R.id.btncorrectsabak);
+        btninc1 = (Button)findViewById(R.id.btnincorrectsabak);
+
+        btnc2 = (Button)findViewById(R.id.btncorrectsabki);
+        btninc2 = (Button)findViewById(R.id.btnincorrectsabki);
+
+        btnc3 = (Button)findViewById(R.id.btncorrectmanzil);
+        btninc3 = (Button)findViewById(R.id.btnincorrectmanzil);
+
 
         btnv1.setOnClickListener(new View.OnClickListener() {
             @Override

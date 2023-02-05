@@ -168,7 +168,7 @@
                     android:orientation="horizontal">
                     <Button
                         android:layout_width="125dp"
-                        android:id="@+id/correctone"
+                        android:id="@+id/btncorrectsabak"
                         android:layout_height="wrap_content"
                         android:text="Correct">
                     </Button>
@@ -179,6 +179,7 @@
                     android:paddingLeft="30dp"
                     android:orientation="horizontal">
                     <Button
+                        android:id="@+id/btnincorrectsabak"
                         android:layout_width="130dp"
                         android:layout_height="wrap_content"
                         android:text="Incorrect"></Button>
@@ -249,6 +250,7 @@
                     android:layout_height="wrap_content">
                     <Button
                         android:layout_width="125dp"
+                        android:id="@+id/btncorrectsabki"
                         android:layout_height="wrap_content"
                         android:text="Correct">
                     </Button>
@@ -259,6 +261,7 @@
                     android:paddingLeft="30dp">
                     <Button
                         android:layout_width="130dp"
+                        android:id="@+id/btnincorrectsabki"
                         android:layout_height="wrap_content"
                         android:text="Incorrect"></Button>
                 </LinearLayout>
@@ -331,7 +334,7 @@
                     <Button
                         android:layout_width="125dp"
                         android:layout_height="wrap_content"
-                        android:id="@+id/btncorrect"
+                        android:id="@+id/btncorrectmanzil"
                         android:text="Correct">
                     </Button>
                 </LinearLayout>
@@ -341,6 +344,7 @@
                     android:paddingLeft="30dp">
                     <Button
                         android:layout_width="130dp"
+                        android:id="@+id/btnincorrectmanzil"
                         android:layout_height="wrap_content"
                         android:text="Incorrect"></Button>
                 </LinearLayout>

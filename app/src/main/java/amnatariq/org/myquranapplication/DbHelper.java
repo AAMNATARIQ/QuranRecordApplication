@@ -95,6 +95,38 @@ public class DbHelper extends SQLiteOpenHelper {
             db.close();
         }
 
+    public void updateStudent(ModalClass lm)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        //Hash map, as we did in bundles
+        ContentValues cv = new ContentValues();
+        cv.put(STUDENT_NAME, lm.getStudentName());
+
+        cv.put(STUDENT_PIC,lm.getPic());
+
+        cv.put(STUDENT_DEPT, lm.getStudentDept());
+
+        cv.put(SABAK, lm.getSabak());
+        cv.put(SABKI, lm.getSabki());
+        cv.put(MANZIL, lm.getManzil());
+
+        cv.put(SABAK_ST, lm.isSabakStatus());
+        cv.put(SABKI_ST, lm.isSabkiStatus());
+        cv.put(MANZIL_ST, lm.isManzilStatus());
+
+        cv.put(SABAK_IC, lm.getIncorrectSabak());
+        cv.put(SABKI_IC, lm.getIncorrectSabki());
+        cv.put(MANZIL_IC, lm.getIncorrectMazil());
+
+
+        cv.put(DIVIDER_IC,lm.getDivider());
+
+        String [] str=new String[]{"aa"};
+
+        db.update(LEARNING_TABLE,cv, "STUDENT_NAME=?", new String[]{lm.getStudentName()});
+        db.close();
+    }
+
         public ArrayList<ModalClass> getAllStudents() {
 
             SQLiteDatabase db = this.getReadableDatabase();
