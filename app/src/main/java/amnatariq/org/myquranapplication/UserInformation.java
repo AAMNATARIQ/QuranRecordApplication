@@ -1,5 +1,7 @@
 package amnatariq.org.myquranapplication;
 
+import static java.lang.Integer.parseInt;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,7 +12,7 @@ import android.widget.TextView;
 
 public class UserInformation extends AppCompatActivity{
 
-    TextView tvname, tvbio;
+    TextView tvname, tvbio, tvsabaknum,tvsabkinum,tvmanzilnum;
 
     Button btnv1,btnv2,btnv3;
 
@@ -23,6 +25,10 @@ public class UserInformation extends AppCompatActivity{
 
         tvname = findViewById(R.id.usernametext);
         tvbio= findViewById(R.id.userbio);
+
+        tvsabaknum = findViewById(R.id.textsabakvalue);
+        tvsabkinum = findViewById(R.id.textsabakivalue);
+        tvmanzilnum = findViewById((R.id.textmanzilvalue));
 
         btnv1 = (Button)findViewById(R.id.btnviewone);
         btnv2 = (Button)findViewById(R.id.btnviewtwo);
@@ -38,7 +44,7 @@ public class UserInformation extends AppCompatActivity{
         btninc3 = (Button)findViewById(R.id.btnincorrectmanzil);
 
 
-        String username = getIntent().getStringExtra("studentName")
+        String username = getIntent().getStringExtra("studentName");
         tvname.setText(username);
         String userbio = getIntent().getStringExtra("studentBio");
         tvbio.setText(userbio);
@@ -47,19 +53,19 @@ public class UserInformation extends AppCompatActivity{
         btnv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                updateSabakView();
+                updateSabakView(username);
             }
         });
         btnv2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                updateSabakiView();
+                updateSabakiView(username);
             }
         });
         btnv3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                updateManzilView();
+                updateManzilView(username);
             }
         });
 
@@ -67,73 +73,100 @@ public class UserInformation extends AppCompatActivity{
         btnc1.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View view){updateSabakCorrectCount();}
+            public void onClick(View view){updateSabakCorrectCount(username);}
         });
         btninc1.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View view){updateSabakIncorrectCount();}
+            public void onClick(View view){updateSabakIncorrectCount(username);}
         });
         btnc2.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View view){updateSabkiCorrectCount();}
+            public void onClick(View view){updateSabkiCorrectCount(username);}
         });
         btninc2.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View view){updateSabkiIncorrectCount();}
+            public void onClick(View view){updateSabkiIncorrectCount(username);}
         });
         btnc3.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View view){updateManzilCorrectCount();}
+            public void onClick(View view){updateManzilCorrectCount(username);}
         });
         btninc3.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View view){updateManzilIncorrectCount();}
+            public void onClick(View view){updateManzilIncorrectCount(username);}
         });
 
     }
-    public void updateSabakView()
+    public void updateSabakView(String username)
     {
         Intent intent = new Intent(this,Sabak.class);
+        intent.putExtra("StudentName",username);
         startActivity(intent);
     }
-    public void updateSabakiView()
+    public void updateSabakiView(String username)
     {
         Intent intent = new Intent(this,Sabaki.class);
+        intent.putExtra("StudentName",username);
         startActivity(intent);
     }
-    public void updateManzilView()
+    public void updateManzilView(String username)
     {
         Intent intent = new Intent(this,Manzil.class);
+        intent.putExtra("StudentName",username);
         startActivity(intent);
     }
 
-    public void updateSabakCorrectCount()
+    public void updateSabakCorrectCount(String username)
     {
-
+        DbHelper db=new DbHelper(this);
+        ModalClass lm = db.getStudent(username);
+        int c=lm.getSabak();
+        lm.setSabak(c+1);
+        db.updateStudent(lm);
     }
-    public void updateSabakIncorrectCount()
+    public void updateSabakIncorrectCount(String username)
     {
-
+        DbHelper db=new DbHelper(this);
+        ModalClass lm = db.getStudent(username);
+        int c=Integer.parseInt(lm.getIncorrectSabak());
+        lm.setIncorrectSabak(String.valueOf(c+1));
+        db.updateStudent(lm);
     }
-    public void updateSabkiCorrectCount()
+    public void updateSabkiCorrectCount(String username)
     {
-
+        DbHelper db=new DbHelper(this);
+        ModalClass lm = db.getStudent(username);
+        int c=lm.getSabki();
+        lm.setSabki(c+1);
+        db.updateStudent(lm);
     }
-    public void updateSabkiIncorrectCount()
+    public void updateSabkiIncorrectCount(String username)
     {
-
+        DbHelper db=new DbHelper(this);
+        ModalClass lm = db.getStudent(username);
+        int c=Integer.parseInt(lm.getIncorrectSabki());
+        lm.setIncorrectSabki(String.valueOf(c+1));
+        db.updateStudent(lm);
     }
-    public void updateManzilCorrectCount()
+    public void updateManzilCorrectCount(String username)
     {
-
+        DbHelper db=new DbHelper(this);
+        ModalClass lm = db.getStudent(username);
+        int c=lm.getManzil();
+        lm.setManzil(c+1);
+        db.updateStudent(lm);
     }
-    public void updateManzilIncorrectCount()
+    public void updateManzilIncorrectCount(String username)
     {
-
+        DbHelper db=new DbHelper(this);
+        ModalClass lm = db.getStudent(username);
+        int c=Integer.parseInt(lm.getIncorrectMazil());
+        lm.setIncorrectMazil(String.valueOf(c+1));
+        db.updateStudent(lm);
     }
 }

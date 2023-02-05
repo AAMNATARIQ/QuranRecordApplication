@@ -114,7 +114,6 @@
                     android:layout_height="60dp"
                     android:id="@+id/cardsabak"
                     android:layout_marginTop="10dp"
-                    android:background="@color/teal_700"
                     android:layout_marginRight="20dp"
                     android:layout_marginLeft="20dp"
                     >
@@ -201,7 +200,6 @@
                     android:layout_height="60dp"
                     android:id="@+id/cardsabaki"
                     android:layout_marginTop="20dp"
-                    android:background="@color/teal_700"
                     android:layout_marginRight="20dp"
                     android:layout_marginLeft="20dp">
                     <TextView
@@ -283,7 +281,6 @@
                     android:layout_height="60dp"
                     android:id="@+id/cardmanzil"
                     android:layout_marginTop="20dp"
-                    android:background="@color/teal_700"
                     android:layout_marginRight="20dp"
                     android:layout_marginLeft="20dp">
                     <TextView
