@@ -133,8 +133,9 @@ public class UserInformation extends AppCompatActivity{
     {
         DbHelper db=new DbHelper(this);
         ModalClass lm = db.getStudent(username);
-        int c=Integer.parseInt(lm.getIncorrectSabak());
-        lm.setIncorrectSabak(String.valueOf(c+1));
+        //int c=Integer.parseInt(lm.getIncorrectSabak());
+        String str = String.valueOf(lm.getSabak());
+        lm.setIncorrectSabak(lm.getIncorrectSabak()+str);
         db.updateStudent(lm);
     }
     public void updateSabkiCorrectCount(String username)
@@ -149,8 +150,10 @@ public class UserInformation extends AppCompatActivity{
     {
         DbHelper db=new DbHelper(this);
         ModalClass lm = db.getStudent(username);
-        int c=Integer.parseInt(lm.getIncorrectSabki());
-        lm.setIncorrectSabki(String.valueOf(c+1));
+//        int c=Integer.parseInt(lm.getIncorrectSabki());
+//        lm.setIncorrectSabki(String.valueOf(c+1));
+        String str = String.valueOf(lm.getSabak());
+        lm.setIncorrectSabak(lm.getIncorrectSabak()+str);
         db.updateStudent(lm);
     }
     public void updateManzilCorrectCount(String username)
@@ -165,8 +168,10 @@ public class UserInformation extends AppCompatActivity{
     {
         DbHelper db=new DbHelper(this);
         ModalClass lm = db.getStudent(username);
-        int c=Integer.parseInt(lm.getIncorrectMazil());
-        lm.setIncorrectMazil(String.valueOf(c+1));
+//        int c=Integer.parseInt(lm.getIncorrectMazil());
+//        lm.setIncorrectMazil(String.valueOf(c+1));
+        String str = String.valueOf(lm.getSabak());
+        lm.setIncorrectSabak(lm.getIncorrectSabak()+str);
         db.updateStudent(lm);
     }
 }
